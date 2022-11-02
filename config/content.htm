@@ -325,7 +325,50 @@ doc["aitetris"].bind("click", aitetris.do)
 <li data-aria-level="2" data-aria-posinset="10"><span data-contrast="auto"><span>接下來要在  Ubuntu (也就是 stud.cycu.org 這台主機所安裝的操作系統) 中, 設定 .gitconfig, 總共包含三項設定: git config --global user.name "scrum-1", git config --global user.email  "scrum1@mde.tw"   以及 git config --global http.proxy http://p42.cycu.org:3128, 這三個設定必須在 ssh 登入畫面中執行, 設定完成檔案會存入帳號根目錄中的 .gitconfig</span></span><span> </span></li>
 <li data-aria-level="2" data-aria-posinset="11"><span data-contrast="auto"><span>利用  git clone --recurse-submodules  </span></span><a href="mailto:git@demo:mdecad2022/site-scrum-1.git"><span data-contrast="auto"><span>git@demo:mdecad2022/site-scrum-1.git</span></span></a><span data-contrast="auto"><span>  demo</span></span><span> </span></li>
 <li data-aria-level="2" data-aria-posinset="12"><span data-contrast="auto"><span>接著下載 </span></span><a href="https://nfuedu.sharepoint.com/:u:/s/cad2022/EXD1ElHAqFNFk6LERfjLYNgBJ4mgWYGSRsRJhq2kQyxK1w?e=rEYXQB"><span data-contrast="auto"><span>server.py</span></span></a><span data-contrast="auto"><span>, 在 Windows 編輯 </span></span><a href="https://nfuedu.sharepoint.com/:u:/s/cad2022/EXD1ElHAqFNFk6LERfjLYNgBJ4mgWYGSRsRJhq2kQyxK1w?e=rEYXQB"><span data-contrast="auto"><span>server.py</span></span></a><span data-contrast="auto"><span>, 將個人分配到的 9xxxx 埠號填入後存檔, 以 sftp 放入上列取下的倉儲根目錄.</span></span><span> </span></li>
-<li data-aria-level="2" data-aria-posinset="13"><span data-contrast="auto"><span>登入  Ubuntu 後, 會使用的指令: pwd 代表 print working directory, clear -  清除螢幕, cd - 更換目錄, ls -l 列出目錄詳細內容, chmod u+x </span></span><a href="https://nfuedu.sharepoint.com/:u:/s/cad2022/EZn5-jIdQ3pMmi_QxSVWWoYBHvcEtgUrAGCPiIlPyDQ6sw?e=9mc7rR"><span data-contrast="auto"><span>acp</span></span></a><span data-contrast="auto"><span> 表示讓 user 可以 execute acp script (能夠讓使用者以 source acp 加上提交字串進行 git add, git commit, git push, 如何在 Windows 執行 acp.bat 加上提交字串.</span></span><span> </span></li>
+<li data-aria-level="2" data-aria-posinset="13"><span data-contrast="auto"><span>登入  Ubuntu 後, 會使用的指令: pwd 代表 print working directory, clear -  清除螢幕, cd - 更換目錄, ls -l 列出目錄詳細內容, chmod u+x </span></span><a href="https://nfuedu.sharepoint.com/:u:/s/cad2022/EZn5-jIdQ3pMmi_QxSVWWoYBHvcEtgUrAGCPiIlPyDQ6sw?e=9mc7rR"><span data-contrast="auto"><span>acp</span></span></a><span data-contrast="auto"><span> 表示讓 user 可以 execute acp script (能夠讓使用者以 source acp 加上提交字串進行 git add, git commit, git push, 如何在 Windows 執行 acp.bat 加上提交字串.</span></span><span><span></span></span><span></span><span></span></li>
 </ol>
+<p><span data-contrast="auto"><span></span></span></p>
+<h2>W6</h2>
+<p>利用stud.cycu.org將倉儲推送到遠端。</p>
+<p>嘗試在校外連線stud.cycu.org</p>
+<p><span data-contrast="auto"><span>在 stud.cycu.org 執行動態網站</span></span><span> </span></p>
+<p><span data-contrast="auto"><span>git config --global http.proxy </span></span><span data-contrast="auto"><span>http://p42.cycu.org:3128</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>git config --global user.name "name"</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>git config --global user.email "email"</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>git clone --recurse-submodules git@demo:mdecad2022/site-github_帳號.git s</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>git submodule update --init --recursive</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>python3 server.py</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>https://stud.cycu.org:8xxx</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>acp 放入倉儲後</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>chmod u+x acp </span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>source acp "提交說明字串"</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>python3 server.py &amp;</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>ps aux | grep "server.py"</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>kill -9 111919</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>cd s, cd cmsimde, git pull origin master</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>cd .., python3 server.py</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span data-contrast="auto"><span>exit 推出 login</span></span><span> </span></p>
+<p><span> </span></p>
+<p><span data-contrast="auto"><span>To fix the cmsimde bug on edit during https mode:</span></span><span> </span></p>
+<p><span data-contrast="auto"><span>Need to cd cmsimde and do "git pull origin master" to update the cmsimde submodule files.</span></span><span> </span></p>
+<p><span> </span></p>
+<p><span data-contrast="auto"><span>After that, go back to the repository root directory to execute python3 server.py &amp; to start the dynamic site.</span></span><span> </span></p>
+<p><span data-contrast="auto"><span> </span></span><span> </span></p>
+<p><span> </span></p>
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
 <!-- editor2 結束 --><hr/></div>
